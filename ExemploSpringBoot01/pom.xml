@@ -8,12 +8,12 @@
 		<version>2.7.2</version>
 		<relativePath/>
 	</parent>
-	<groupId>br.unasp.distribuidos</groupId>
+	<groupId>br.unasp.projeto</groupId>
 	<artifactId>spring-boot-app</artifactId>
 	<packaging>jar</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>spring-boot-app</name>
-	<description>Teste Springboot + Docker</description>
+	<description>Teste Springboot</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
