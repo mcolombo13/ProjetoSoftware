@@ -24,6 +24,8 @@ public class PessoaControle {
 
     @PutMapping("/pessoa")
     public Pessoa criarPessoa(@RequestParam String nome, @RequestParam int idade) {
+		System.out.println("NOME=" + nome);
+		System.out.println("IDADE=" + idade);
         return new Pessoa(nome, idade);
     }
 	
