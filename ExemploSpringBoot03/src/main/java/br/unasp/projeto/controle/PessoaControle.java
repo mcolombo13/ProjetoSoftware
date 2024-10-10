@@ -29,7 +29,7 @@ public class PessoaControle {
 		/*
 		 *
 		 * Verificar possiveis status: https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/http/HttpStatus.html
-		 *
+		 */
 		
 		if (nome == null || nome.trim().equals("")) {
             throw new ResponseStatusException(
@@ -42,7 +42,12 @@ public class PessoaControle {
                 HttpStatus.BAD_REQUEST, "A idade deve ser maior que 0"
             );
         }
-		*/
+		
+		if (idade > 120) {
+            throw new ResponseStatusException(
+                HttpStatus.BAD_REQUEST, "A idade deve ser menor que 120"
+            );
+        }
 	
         return new Pessoa(nome, idade);
     }
